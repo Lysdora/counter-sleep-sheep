@@ -88,4 +88,12 @@ footer {
   .container {
     width: 100%;
   }
+  .btn {
+    padding: 1rem 1.8rem;
+    margin-left: 2rem;
+  }
+  .sheep {
+    margin-top: 2rem;
+    width: 35%;
+  }
 }
