@@ -72,6 +72,16 @@ hr {
 .bubble-effect:hover {
   transform: scale(1.1);
 }
+
+.sheep {
+  margin-top: 2rem;
+  width: 35%;
+}
+
+.sheep-gif {
+  margin-top: 2rem;
+  border-radius: 5px;
+}
 footer {
   position: fixed;
   left: 0;
@@ -87,13 +97,10 @@ footer {
 @media screen and (max-width: 740px) {
   .container {
     width: 100%;
+    background-color: #392e4b;
   }
   .btn {
-    padding: 1rem 1.8rem;
+    padding: 1rem 2.9rem;
     margin-left: 2rem;
-  }
-  .sheep {
-    margin-top: 2rem;
-    width: 35%;
   }
 }
