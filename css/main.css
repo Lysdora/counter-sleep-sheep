@@ -27,9 +27,9 @@ body,
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
 
-.sheep-img img {
-  max-width: 50%;
-  margin: 0 auto;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 h1 {
@@ -73,17 +73,12 @@ hr {
   transform: scale(1.1);
 }
 
-#video {
-  height: auto;
-  width: 100%;
-  object-fit: cover;
-  position: relative;
+/* Global styles for gif sheep */
+.sheep-gif {
   margin: 20px;
-  border: 2px solid #1d0a04;
-  border-radius: 5px;
 }
 
-footer {
+.sheep-gif img footer {
   position: fixed;
   left: 0;
   bottom: 0;
@@ -91,4 +86,13 @@ footer {
   background-color: var(--color-bg);
   padding: 10px;
   text-align: center;
+}
+
+@media screen and (max-width: 740px) {
+  .container {
+    width: 100%;
+  }
+  .sheep {
+    max-width: 60%;
+  }
 }
