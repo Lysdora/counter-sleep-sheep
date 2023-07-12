@@ -63,6 +63,7 @@ hr {
   box-shadow: 0 2px 25px rgba(255, 150, 0, 1);
   cursor: pointer;
   margin-left: 1rem;
+  touch-action: manipulation;
 }
 
 /* Bubble effect */
