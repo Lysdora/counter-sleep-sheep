@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-fushia: #ff6d60;
+  --color-white: #fff;
+  --color-bg: #f7d060;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+  color: var(--color-white);
+  background-color: var(--color-bg);
+}
+body,
+.container {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.sheep-img img {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--color-fushia);
+  font-size: 2.5rem;
+}
+
+hr {
+  border: 3px dotted white;
+  width: 50%;
+}
+.container {
+  width: 46rem;
+  text-align: center;
+  margin: 0 auto;
+  background-color: var(--color-bg);
+  height: 100vh;
+}
+
+/* Global styles for Button */
+
+.btn {
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5px;
+  display: inline-block;
+  color: var(--color-white);
+  background-color: var(--color-fushia);
+  font-size: 1rem;
+  transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+  box-shadow: 0 2px 25px rgba(255, 150, 0, 1);
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+/* Bubble effect */
+.bubble-effect {
+  transition: transform 0.3s ease-in-out;
+}
+.bubble-effect:hover {
+  transform: scale(1.1);
+}
+
+#video {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  margin: 20px;
+  border: 2px solid #1d0a04;
+  border-radius: 5px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: var(--color-bg);
+  padding: 10px;
+  text-align: center;
+}
